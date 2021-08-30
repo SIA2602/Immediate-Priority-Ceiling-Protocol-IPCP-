@@ -6,6 +6,8 @@
 
 using namespace EPOS;
 
+Semaphore_IPCP *sem; //criando variavel Semaphore_IPCP
+
 const unsigned int iterations = 1;
 const unsigned int period_a = 100; // ms
 const unsigned int period_b = 80; // ms
@@ -72,6 +74,8 @@ int main()
     thread_b = new Periodic_Thread(RTConf(period_b * 1000, iterations), &func_b);
     thread_c = new Periodic_Thread(RTConf(period_c * 1000, iterations), &func_c);
     thread_d = new Periodic_Thread(RTConf(period_d * 1000, iterations), &func_d);
+
+    sem = new(Semaphore_IPCP); //Alocando variavel sem como Semaphore_IPCP
 
     exec('M');
 

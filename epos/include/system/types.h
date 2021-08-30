@@ -103,6 +103,7 @@ class Segment;
 class Synchronizer;
 class Mutex;
 class Semaphore;
+class Semaphore_IPCP;
 class Condition;
 
 class Clock;

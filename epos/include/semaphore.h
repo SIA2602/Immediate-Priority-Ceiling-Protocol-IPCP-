@@ -22,6 +22,20 @@ private:
 };
 
 
+class Semaphore_IPCP: protected Synchronizer_Common
+{
+public:
+    Semaphore_IPCP(int v = 1);
+    ~Semaphore_IPCP();
+
+    void p();
+    void v();
+
+private:
+    volatile int _value;
+};
+
+
 // An event handler that triggers a semaphore (see handler.h)
 class Semaphore_Handler: public Handler
 {
