@@ -6,15 +6,15 @@
 
 using namespace EPOS;
 
-const unsigned int iterations = 100;
+const unsigned int iterations = 1;
 const unsigned int period_a = 100; // ms
 const unsigned int period_b = 80; // ms
 const unsigned int period_c = 60; // ms
-const unsigned int period_d = 90; // ms
+const unsigned int period_d = 150; // ms
 const unsigned int wcet_a = 50; // ms
 const unsigned int wcet_b = 20; // ms
 const unsigned int wcet_c = 10; // ms
-const unsigned int wcet_d = 30; // ms
+const unsigned int wcet_d = 60; // ms
 
 int func_a();
 int func_b();
@@ -64,7 +64,7 @@ int main()
     cout << "- Every " << period_a << "ms, thread A execs \"a\", waits for " << wcet_a << "ms and then execs another \"a\";" << endl;
     cout << "- Every " << period_b << "ms, thread B execs \"b\", waits for " << wcet_b << "ms and then execs another \"b\";" << endl;
     cout << "- Every " << period_c << "ms, thread C execs \"c\", waits for " << wcet_c << "ms and then execs another \"c\";" << endl;
-    cout << "- Every " << period_d << "ms, thread C execs \"c\", waits for " << wcet_d << "ms and then execs another \"d\";" << endl;
+    cout << "- Every " << period_d << "ms, thread D execs \"d\", waits for " << wcet_d << "ms and then execs another \"d\";" << endl;
 
     cout << "Threads will now be created and I'll wait for them to finish..." << endl;
 
