@@ -11,7 +11,7 @@ Boot failed: could not read the boot disk
 Booting from Floppy...
 Loading EPOS .. done;
 This is EPOSSetting up this machine as follows: 
-  Processor:    IA32 at 2811 MHz (BUS clock = 125 MHz)
+  Processor:    IA32 at 2812 MHz (BUS clock = 125 MHz)
   Memory:       262144 Kbytes [0x00000000:0x10000000]
   User memory:  261820 Kbytes [0x00000000:0x0ffaf000]
   PCI aperture: 28356 Kbytes [0xfd000000:0xfebb1000]
@@ -92,8 +92,8 @@ Threads will now be created and I'll wait for them to finish...
 55	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 56	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 57	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+57	C	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 58	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-59	C	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 59	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 60	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 61	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
@@ -112,9 +112,9 @@ Threads will now be created and I'll wait for them to finish...
 74	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 75	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 76	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+76	B	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 77	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 78	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-78	B	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 79	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 80	D	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 80	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
@@ -135,8 +135,8 @@ Threads will now be created and I'll wait for them to finish...
 94	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 95	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 96	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+96	A	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 97	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-97	A	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 98	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 99	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 100	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
@@ -179,15 +179,15 @@ Threads will now be created and I'll wait for them to finish...
 137	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 138	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 139	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-224	D	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-225	M	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+158	D	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+158	M	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 ... done!
 
 
 Thread A exited with status "A", thread B exited with status "B", thread C exite
 d with status "C" and thread D exited with status "D.
 
-The estimated time to run the test was 150 ms. The measured time was 225 ms!
+The estimated time to run the test was 150 ms. The measured time was 158 ms!
 I'm also done, bye!
 The last thread has exited!
 Rebooting the machine ...
