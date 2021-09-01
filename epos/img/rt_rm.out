@@ -11,13 +11,13 @@ Boot failed: could not read the boot disk
 Booting from Floppy...
 Loading EPOS .. done;
 This is EPOSSetting up this machine as follows: 
-  Processor:    IA32 at 2812 MHz (BUS clock = 125 MHz)
+  Processor:    IA32 at 2811 MHz (BUS clock = 125 MHz)
   Memory:       262144 Kbytes [0x00000000:0x10000000]
   User memory:  261820 Kbytes [0x00000000:0x0ffaf000]
   PCI aperture: 28356 Kbytes [0xfd000000:0xfebb1000]
   Node Id:      will get from the network!
   Setup:        19328 bytes
-  APP code:     24544 bytes	data: 544 bytes
+  APP code:     25024 bytes	data: 544 bytes
 Periodic Thread Abstraction Test
 
 This test consists in creating three periodic threads as follows:
@@ -39,8 +39,10 @@ Threads will now be created and I'll wait for them to finish...
 6	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 7	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 8	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-11	B	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-11	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+9	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+10	B	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+10	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+10	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 11	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 12	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 13	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
@@ -60,9 +62,9 @@ Threads will now be created and I'll wait for them to finish...
 27	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 28	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 29	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-30	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-31	A	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-31	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+30	A	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+30	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+30	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 31	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 32	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 33	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
@@ -73,6 +75,8 @@ Threads will now be created and I'll wait for them to finish...
 38	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 39	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 40	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+41	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+42	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 43	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 44	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 45	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
@@ -89,12 +93,11 @@ Threads will now be created and I'll wait for them to finish...
 56	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 57	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 58	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+59	C	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 59	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 60	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 61	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-62	a	[p(A)=100000, p(B)=80000
-63	C	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000], p(C)=6000
-0, p(D)=150000]
+62	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 63	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 64	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 65	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
@@ -107,18 +110,20 @@ Threads will now be created and I'll wait for them to finish...
 72	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 73	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 74	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+75	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+76	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 77	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 78	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+78	B	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 79	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-80	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-81	D	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-81	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+80	D	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+80	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+80	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 81	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 82	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 83	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 84	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 85	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-85	B	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 86	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 87	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 88	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
@@ -130,6 +135,8 @@ Threads will now be created and I'll wait for them to finish...
 94	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 95	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 96	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+97	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+97	A	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 98	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 99	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 100	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
@@ -138,7 +145,6 @@ Threads will now be created and I'll wait for them to finish...
 103	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 104	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 105	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-105	A	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 106	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 107	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 108	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
@@ -173,16 +179,15 @@ Threads will now be created and I'll wait for them to finish...
 137	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 138	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 139	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-140	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-161	D	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
-161	M	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+224	D	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+225	M	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
 ... done!
 
 
 Thread A exited with status "A", thread B exited with status "B", thread C exite
 d with status "C" and thread D exited with status "D.
 
-The estimated time to run the test was 150 ms. The measured time was 161 ms!
+The estimated time to run the test was 150 ms. The measured time was 225 ms!
 I'm also done, bye!
 The last thread has exited!
 Rebooting the machine ...

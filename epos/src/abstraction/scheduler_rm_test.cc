@@ -109,10 +109,9 @@ int func_a()
 {
     exec('A');
 
-    do {
-        exec('a', wcet_a);
+    do {        
         sem->p();
-        //regiao critica
+        exec('a', wcet_a);
         sem->v();
     } while (Periodic_Thread::wait_next());
 
@@ -125,10 +124,9 @@ int func_b()
 {
     exec('B');
 
-    do {
-        exec('b', wcet_b);
+    do {        
         sem->p();
-        //regiao critica
+        exec('b', wcet_b);
         sem->v();
     } while (Periodic_Thread::wait_next());
 
@@ -141,10 +139,9 @@ int func_c()
 {
     exec('C');
 
-    do {
-        exec('c', wcet_c);
+    do {        
         sem->p();
-        //regiao critica
+        exec('c', wcet_c);
         sem->v();
     } while (Periodic_Thread::wait_next());
 
@@ -157,10 +154,9 @@ int func_d()
 {
     exec('D');
 
-    do {
-        exec('d', wcet_d);
+    do {        
         sem->p();
-        //regiao critica
+        exec('d', wcet_d);
         sem->v();
     } while (Periodic_Thread::wait_next());
 
