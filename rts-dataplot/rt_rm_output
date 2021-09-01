@@ -1,0 +1,309 @@
+make --print-directory run1
+make[1]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos'
+(cd etc && make --print-directory)
+make[2]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/etc'
+sed -e 's/^#define MODE.*$/#define MODE library/' -i /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/include/system/config.h
+sed -e 's/^#define ARCH.*$/#define ARCH ia32/' -i /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/include/system/config.h
+sed -e 's/^#define MACH.*$/#define MACH pc/' -i /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/include/system/config.h
+sed -e 's/^#define MMOD.*$/#define MMOD legacy/' -i /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/include/system/config.h
+sed -e 's/^#define APPL.*$/#define APPL rt_rm/' -i /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/include/system/config.h
+sed -e 's/^#define __mode_.*__$/#define __mode_library__/' -i /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/include/system/config.h
+sed -e 's/^#define __arch_.*__$/#define __arch_ia32__/' -i /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/include/system/config.h
+sed -e 's/^#define __mach_.*__$/#define __mach_pc__/' -i /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/include/system/config.h
+sed -e 's/^#define __mmod_.*__$/#define __mmod_legacy__/' -i /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/include/system/config.h
+make[2]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/etc'
+(cd tools && make --print-directory)
+make[2]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/tools'
+(cd eposcc && make --print-directory)
+make[3]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/tools/eposcc'
+install -m 775 eposcc /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/bin
+sed -e 's/^EPOS=.*$/EPOS=\/home\/hal\/Desktop\/Immediate-Priority-Ceiling-Protocol-IPCP-\/epos/' -i /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/bin/eposcc
+make[3]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/tools/eposcc'
+(cd eposmkbi && make --print-directory)
+make[3]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/tools/eposmkbi'
+install -m 775 eposmkbi /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/bin
+make[3]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/tools/eposmkbi'
+make[2]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/tools'
+(cd src && make --print-directory)
+make[2]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src'
+(cd utility && make --print-directory)
+make[3]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/utility'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/utility'
+(cd architecture && make --print-directory)
+make[3]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/architecture'
+(cd ia32 && make --print-directory)
+make[4]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/architecture/ia32'
+install ia32_crt0.o ia32_crtbegin.o ia32_crtend.o /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/lib
+make[4]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/architecture/ia32'
+make[3]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/architecture'
+(cd machine && make --print-directory)
+make[3]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/machine'
+(cd common && make --print-directory)
+make[4]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/machine/common'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/machine/common'
+(cd pc && make --print-directory)
+make[4]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/machine/pc'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/machine/pc'
+make[3]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/machine'
+(cd abstraction && make --print-directory)
+make[3]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/abstraction'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/abstraction'
+(cd setup && make --print-directory)
+make[3]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/setup'
+install pc_setup /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/img
+make[3]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/setup'
+(cd boot && make --print-directory)
+make[3]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/boot'
+dd if=pc_boot of=pc_boot.tmp ibs=32 skip=1 obs=512 >& /dev/null
+install pc_boot.tmp /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/img/pc_boot
+rm -f pc_boot.tmp
+make[3]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/boot'
+(cd system && make --print-directory)
+make[3]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/system'
+/usr/local/ia32/gcc-4.4.4/bin/ia32-ld  -nostdlib -L/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/lib -Bstatic -i system_scaffold.o -o pc_system.o
+install application_scaffold.o pc_application.o
+install pc_system.o /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/lib
+install pc_application.o /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/lib
+make[3]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/system'
+(cd init && make --print-directory)
+make[3]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/init'
+install init_first.o pc_init_first.o
+install init_system.o pc_init_system.o
+install init_application.o pc_init_application.o
+install pc_init_first.o /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/lib
+install pc_init_system.o /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/lib
+install pc_init_application.o /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/lib
+make[3]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src/init'
+make[2]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/src'
+(cd app && make --print-directory)
+make[2]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/app'
+/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/bin/eposcc --library  --gc-sections  -o rt_rm rt_rm.o
+install rt_rm /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/img
+make[2]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/app'
+(cd img && make --print-directory)
+make[2]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/img'
+/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/bin/eposmkbi /home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos rt_rm.img rt_rm
+
+EPOS bootable image tool
+
+  EPOS mode: library
+  Machine: pc
+  Model: legacy
+  Processor: ia32 (32 bits, little-endian)
+  Memory: 262144 KBytes
+  Boot Length: 128 - 512 (min - max) KBytes
+  Node id: will get from the network
+
+  Creating EPOS bootable image in "rt_rm.img":
+    Adding boot strap "/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/img/pc_boot": done.
+    Adding setup "/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/img/pc_setup": done.
+    Adding application "rt_rm": done.
+    Adding system info: done.
+
+  Adding specific boot features of "pc": done.
+
+  Image successfully generated (46312 bytes)!
+
+make[2]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/img'
+(cd img && make --print-directory run)
+make[2]: Entering directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/img'
+qemu-system-i386 -smp 1 -m 262144k -nographic -no-reboot -fda  rt_rm.img | tee rt_rm.out
+c[?7l[2J[0mSeaBIOS (version 1.13.0-1ubuntu1.1)
+
+
+iPXE (http://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0FF8CA10+0FECCA10 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from Hard Disk...
+Boot failed: could not read the boot disk
+
+Booting from Floppy...
+Loading EPOS .. done;
+This is EPOSSetting up this machine as follows: 
+  Processor:    IA32 at 2811 MHz (BUS clock = 125 MHz)
+  Memory:       262144 Kbytes [0x00000000:0x10000000]
+  User memory:  261820 Kbytes [0x00000000:0x0ffaf000]
+  PCI aperture: 28356 Kbytes [0xfd000000:0xfebb1000]
+  Node Id:      will get from the network!
+  Setup:        19328 bytes
+  APP code:     25024 bytes	data: 544 bytes
+Periodic Thread Abstraction Test
+
+This test consists in creating three periodic threads as follows:
+- Every 100ms, thread A execs "a", waits for 50ms and then execs another "a";
+- Every 80ms, thread B execs "b", waits for 20ms and then execs another "b";
+- Every 60ms, thread C execs "c", waits for 10ms and then execs another "c";
+- Every 150ms, thread D execs "d", waits for 60ms and then execs another "d";
+Threads will now be created and I'll wait for them to finish...
+
+0	M	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+0	C	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+0	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+0	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+1	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+2	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+3	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+4	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+5	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+6	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+7	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+8	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+9	c	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+10	B	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+10	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+10	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+11	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+12	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+13	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+14	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+15	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+16	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+17	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+18	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+19	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+20	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+21	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+22	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+23	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+24	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+25	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+26	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+27	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+28	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+29	b	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+30	A	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+30	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+30	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+31	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+32	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+33	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+34	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+35	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+36	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+37	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+38	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+39	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+40	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+41	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+42	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+43	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+44	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+45	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+46	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+47	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+48	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+49	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+50	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+51	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+52	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+53	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+54	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+55	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+56	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+57	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+58	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+59	C	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+59	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+60	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+61	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+62	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+63	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+64	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+65	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+66	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+67	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+68	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+69	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+70	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+71	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+72	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+73	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+74	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+75	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+76	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+77	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+78	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+78	B	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+79	a	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+80	D	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+80	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+80	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+81	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+82	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+83	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+84	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+85	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+86	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+87	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+88	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+89	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+90	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+91	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+92	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+93	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+94	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+95	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+96	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+97	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+97	A	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+98	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+99	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+100	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+101	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+102	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+103	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+104	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+105	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+106	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+107	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+108	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+109	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+110	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+111	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+112	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+113	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+114	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+115	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+116	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+117	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+118	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+119	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+120	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+121	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+122	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+123	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+124	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+125	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+126	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+127	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+128	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+129	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+130	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+131	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+132	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+133	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+134	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+135	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+136	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+137	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+138	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+139	d	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+224	D	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+225	M	[p(A)=100000, p(B)=80000, p(C)=60000, p(D)=150000]
+... done!
+
+
+Thread A exited with status "A", thread B exited with status "B", thread C exite
+d with status "C" and thread D exited with status "D.
+
+The estimated time to run the test was 150 ms. The measured time was 225 ms!
+I'm also done, bye!
+The last thread has exited!
+Rebooting the machine ...
+make[2]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos/img'
+make[1]: Leaving directory '/home/hal/Desktop/Immediate-Priority-Ceiling-Protocol-IPCP-/epos'
