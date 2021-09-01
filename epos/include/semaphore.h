@@ -22,41 +22,28 @@ private:
 };
 
 
-/*class Semaphore_IPCP: protected Synchronizer_Common
-{
-public:
-    Semaphore_IPCP(int v = 1);
-    ~Semaphore_IPCP();
-
-    void p();
-    void v();
-
-private:
-    volatile int _value;
-};*/
-
 class Semaphore_IPCP : public Semaphore
 {
-    public:
-        
-        typedef Ordered_Queue<Semaphore_IPCP> Queue_IPCP;
-        
-        Semaphore_IPCP(int v = 1, int ceiling=0);
-        
-        void p();
-        void v();
-        
-        static int get_SystemCeiling(){ return system_ceiling;}
-        
-        static Queue_IPCP * _locked;
-        
-    private:
-        int _value;
-        int resource_ceiling;
+public:
+    
+    typedef Ordered_Queue<Semaphore_IPCP> Queue_IPCP;
+    
+    Semaphore_IPCP(int v = 1, int ceiling=0);
+    
+    void p();
+    void v();
+    
+    static int get_Teto_sistema(){ return Teto_sistema;}
+    
+    static Queue_IPCP * _locked;
+    
+private:
+    int _value;
+    int Recurso_ceiling;
 
-        static int system_ceiling;
-        
-        Queue_IPCP::Element _link;
+    static int Teto_sistema;
+    
+    Queue_IPCP::Element _ptr;
 };
 
 
